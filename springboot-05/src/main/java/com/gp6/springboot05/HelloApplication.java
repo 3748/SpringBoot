@@ -1,4 +1,4 @@
-package com.gp6.springboot04;
+package com.gp6.springboot05;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +14,7 @@ public class HelloApplication {
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(HelloApplication.class);
         // 关闭banner
-        springApplication.setBannerMode(Banner.Mode.OFF);
+        springApplication.setBannerMode(Banner.Mode.CONSOLE);
         springApplication.run();
     }
 }
