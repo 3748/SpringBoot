@@ -1,0 +1,24 @@
+# 指定端口
+server:
+  port: 8080
+
+# 激活指定环境
+spring:
+  profiles:
+    active: test
+
+# --- 代表文件分割,将application.yml文件分为多个模块
+---
+server:
+  port: 8081
+
+# 环境标识
+spring:
+  profiles: test
+
+---
+server:
+  port: 8082
+
+spring:
+  profiles: production
