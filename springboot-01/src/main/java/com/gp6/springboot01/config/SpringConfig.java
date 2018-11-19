@@ -4,7 +4,6 @@ import com.gp6.springboot01.mapper.UserMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-
 /**
 * 配置文件
 *

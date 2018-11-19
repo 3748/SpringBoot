@@ -1,6 +1,5 @@
 package com.gp6.springboot01.mapper;
 
-
 import com.gp6.springboot01.bean.User;
 
 import java.util.ArrayList;
