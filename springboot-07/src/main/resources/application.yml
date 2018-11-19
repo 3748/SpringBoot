@@ -1,0 +1,10 @@
+person:
+  lastName: gp6
+  age: 22
+  boss: false
+  birth: 2018/11/16
+  maps: {brand: 神舟,price: 5000}
+  lists: [神舟,美帝良心联想]
+  dog:
+    name: 小白
+    age: 15
