@@ -5,7 +5,9 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /*
-    使用WebMvcConfigurationSupport可扩展SpringMVC的功能
+    实现WebMvcConfigurer可扩展SpringMVC(详见springboot-18)
+
+    使用WebMvcConfigurationSupport自定义SpringMVC的功能
 
     @EnableWebMvc: SpringBoot对SpringMVC自动配置全部失效(不推荐)
 */
