@@ -1,4 +1,4 @@
-package com.atguigu.springboot.component;
+package com.gp6.springboot18.config;
 
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.LocaleResolver;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
 /**
- * 可以在连接上携带区域信息
+ * 将区域信息放到请求中
  */
 public class MyLocaleResolver implements LocaleResolver {
     
