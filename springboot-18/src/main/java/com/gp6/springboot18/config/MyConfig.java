@@ -20,18 +20,18 @@ public class MyConfig implements WebMvcConfigurer {
         registry.addViewController("/main.html").setViewName("dashboard");
     }
 
-    //注册拦截器
+    // 注册拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         /*
             SpringBoot已配置静态资源映射,编写拦截器时,无需考虑静态资源
         */
-        registry.addInterceptor(new MyHandlerInterceptor()).
+        /*registry.addInterceptor(new MyHandlerInterceptor()).
                 // 拦截的请求(/** : 所有)
                 addPathPatterns("/**")
 
                 // 放行的请求
-                .excludePathPatterns("/login.html","/","/user/login");
+                .excludePathPatterns("/login.html","/","/user/login","/asserts");*/
     }
 
     /*

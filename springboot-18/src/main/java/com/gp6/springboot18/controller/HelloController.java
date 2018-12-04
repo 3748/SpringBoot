@@ -1,8 +1,11 @@
 package com.gp6.springboot18.controller;
 
 
+import com.gp6.springboot18.exception.UserNotExistException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
@@ -18,5 +21,17 @@ public class HelloController {
     @RequestMapping({"/","/index.html"})
     public String index(){
         return "login";
+    }
+
+    /*
+        测试自定义异常
+    */
+    @RequestMapping({"testException"})
+    @ResponseBody
+    public String testException(@RequestParam("userName") String userName){
+       if("gp6".equals(userName)){
+            throw  new UserNotExistException();
+       }
+       return "测试自定义异常";
     }
 }
