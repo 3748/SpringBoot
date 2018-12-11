@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.gp6.springboot27.initializer.MyApplicationContextInitializer
+
+org.springframework.boot.SpringApplicationRunListener=\
+com.gp6.springboot27.initializer.MySpringApplicationRunListener
