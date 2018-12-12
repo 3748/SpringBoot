@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.gp6.starter.autoconfig.MyServiceAutoConfiguration
