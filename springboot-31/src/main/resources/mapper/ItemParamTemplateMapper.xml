@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gp6.springboot31.mapper.ItemParamTemplateMapper">
+
+    <resultMap id="BaseResultMap" type="com.gp6.springboot31.bean.ItemParamTemplate">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="cat_id" property="catId" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <resultMap id="ResultMapWithBLOBs" type="com.gp6.springboot31.bean.ItemParamTemplate" extends="BaseResultMap">
+        <result column="param_data" property="paramData" jdbcType="LONGVARCHAR"/>
+    </resultMap>
+
+
+    <select id="selectItemParamTemplateById" resultType="com.gp6.springboot31.bean.ItemParamTemplate">
+        SELECT * FROM m_item_param_template WHERE id=#{id}
+    </select>
+
+
+</mapper>

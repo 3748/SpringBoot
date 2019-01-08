@@ -3,6 +3,7 @@ package com.gp6.springboot01.config;
 import com.gp6.springboot01.mapper.UserMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
 * 配置文件
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 */
 // 通过@ComponentScan注解来表明该类是一个Spring的配置，相当于一个xml文件
 // 配置扫描包
+//@Configuration
 @ComponentScan(basePackages = "com.gp6.springboot01")
 public class SpringConfig {
 

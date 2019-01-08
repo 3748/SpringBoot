@@ -1,4 +1,4 @@
-package com.gp6.springboot25.config;
+package com.gp6.springboot31.config;
 
 
 import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;
