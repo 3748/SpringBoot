@@ -1,0 +1,13 @@
+# RestTemplate
+rest:
+  # \u8BFB\u53D6\u8D85\u65F6\u65F6\u95F4 \u5355\u4F4D:\u6BEB\u79D2
+  readTimeOut: 3000
+
+  # \u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4
+  connectTimeOut: 2000
+
+  # \u5355\u4E2A\u4E3B\u673A\u7684\u6700\u5927\u8FDE\u63A5\u6570
+  maxConnectPerRoute: 20
+
+  # \u8FDE\u63A5\u6C60\u7684\u6700\u5927\u8FDE\u63A5\u6C60
+  maxTotalConnect: 0
